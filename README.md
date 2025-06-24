@@ -1,12 +1,57 @@
-# React + Vite
+# 💬 Chatty - React + Vite Chat App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time chat application built using **React**, **Vite**, and **Axios**, connected to a **Spring Boot backend** deployed on **Railway**. Users can register, login, and exchange messages through a RESTful API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Technologies Used
 
-## Expanding the ESLint configuration
+- ⚛️ React
+- ⚡ Vite
+- 🪝 React Hooks
+- 📦 Axios
+- 🎨 CSS / Tailwind (optional)
+- 🔐 JWT Authentication
+- 🌐 Deployed on [Railway](https://railway.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ✅ User Registration & Login
+- ✅ JWT-based Authentication
+- ✅ Send and Receive Chat Messages
+- ✅ Backend API Integration
+- ✅ Responsive UI
+- ✅ Hosted on Railway (frontend + backend)
+
+---
+
+
+
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root:
+
+```env
+VITE_API_URL=https://your-backend-url.up.railway.app
+# Clone the repository
+git clone https://github.com/your-username/chatty-react-vite.git
+cd chatty-react-vite
+
+# Install dependencies
+npm install
+
+# Run the app locally
+npm run dev
+POST   /api/auth/register     - User registration
+POST   /api/auth/login        - User login
+GET    /api/chat/messages     - Get chat messages
+POST   /api/chat/message      - Send a chat message
+
+npm run build
+npx serve dist
+
